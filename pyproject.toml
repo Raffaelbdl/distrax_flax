@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "distrax-tabulate"
+requires-python = ">=3.10"
+description = "Tabulate Flax modules that use distrax Distributions"
+authors = [
+    {name = "Raffael Bolla Di Lorenzo", email = "raffaelbdl@gmail.com"}
+]
+dependencies = [
+    "distrax", 
+    "pyyaml"
+]
+dynamic = ["version", "readme"]
+
+[project.urls]
+homepage = "https://github.com/Raffaelbdl/distrax_flax"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+version = {attr = "dx_tabulate.version.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["dx_tabulate*"]
