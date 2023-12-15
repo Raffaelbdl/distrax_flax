@@ -3,9 +3,14 @@
 > Allows to tabulate Flax modules that use distrax Distributions
 
 - [Distrax Tabulate](#distrax-tabulate)
+  - [Installation](#installation)
   - [Example](#example)
   - [How it works](#how-it-works)
 
+## Installation
+```bash
+pip install --upgrade git+https://github.com/Raffaelbdl/distrax_flax
+```
 
 ## Example
 
